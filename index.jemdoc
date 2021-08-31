@@ -1,4 +1,5 @@
-# jemdoc: menu{MENU}{index.html}
+# jemdoc: menu{MENU}{index.html} 
+# jemdoc: nofooter
 = Jiang Wenqing(姜文青)
 
 ~~~
@@ -8,8 +9,7 @@ Master's Student \n
 SIST Building 1, Room 1D-204,\n
 [https://robotics.shanghaitech.edu.cn/ Mobile Autonomous Robotic Systems Lab (MARS Lab)] \n
 [http://sist.shanghaitech.edu.cn/sist_en/ School of Information Science and Technology]\n
-[http://www.shanghaitech.edu.cn/eng/ ShanghaiTech University]\n
-201210 Shanghai, China. \n
+[http://www.shanghaitech.edu.cn/eng/ ShanghaiTech University], 201210 Shanghai, China. \n
 E-post: /jiangwq/@shanghaitech.edu.cn
 ~~~
 

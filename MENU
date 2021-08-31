@@ -7,7 +7,7 @@ menu
     Activities			[activities.html]
 
 blog
-    test                [README.html]
+    Test                [blog/README.html]
 	
 usefull links
    Jemdoc   		[http://jemdoc.jaboc.net/]

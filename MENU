@@ -1,14 +1,12 @@
 menu
     Home                [index.html]
-    Research			[research.html]
-	Publication         [publications.html]
-	Teaching			[teaching.html]
-	Courses				[courses.html]
-    Activities			[activities.html]
+    Research            [research.html]
+    Publication         [publications.html]
+    Teaching            [teaching.html]
+    Courses             [courses.html]
+    Activities          [activities.html]
+    Blog                [https://blog.jankin.top]
 
-blog
-    Test                [blog/README.html]
-	
 usefull links
-   Jemdoc   		[http://jemdoc.jaboc.net/]
+   Jemdoc               [http://jemdoc.jaboc.net/]
    

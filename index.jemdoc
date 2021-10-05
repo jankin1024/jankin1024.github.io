@@ -1,11 +1,10 @@
-# jemdoc: menu{MENU}{index.html} 
+# jemdoc: menu{MENU}{index.html}
 # jemdoc: nofooter
 = Jiang Wenqing(姜文青)
 
 ~~~
 {}{img_left}{image/Jiangwq.jpg}{jiangwq}{129}{172}{https://page.jankin.top/}
-Jiang Wenqing \n
-Master's Student \n 
+Master Student \n 
 SIST Building 1, Room 1D-204,\n
 [https://robotics.shanghaitech.edu.cn/ Mobile Autonomous Robotic Systems Lab (MARS Lab)] \n
 [http://sist.shanghaitech.edu.cn/sist_en/ School of Information Science and Technology]\n
@@ -14,8 +13,9 @@ E-post: /jiangwq/@shanghaitech.edu.cn
 ~~~
 
 == About me
-I was a student from the college of computer science and technology, Nanjing Tech University.
- And I like to explore how robot work and want to invent excellent control algorithm.
+I am now a master student in ShanghaiTech University, Shanghai. My superviser is [https://robotics.shanghaitech.edu.cn/people/soeren Sören Schwertfeger]. Before that, I achieved my Bachelor's Degree in NanjingTech University, Nanjing.
+
+My interest is Robotics and SLAM(Simultaneous Localization and Mapping). Currently, I am working on the eFMT-SLAM, which is an extension of the eFMT-based visual odometry. My previous works cover topics to image process, hand-eye calibration and sensors synchronization. 
 
 == Research
 - Design of autonomous navigation robot based on ROS

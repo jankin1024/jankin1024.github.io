@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{research.html}
+# jemdoc: nofooter
+= Jiang Wenqing(姜文青) - Research
+
+
+== Mapping robot
+This project aims to build a robot equipped with 16 industrial cameras, a lidar, and other sensors on the Husky platform. It will be used to collect real environment data sets.
+
+== Laser-omni-sinusoid
+After radar scans to obtain environmental information, the point cloud is projected onto a plane to form a picture. Use Fourier transform to analyze the transformation of pictures corresponding to consecutive frames, thereby inferring the camera's pose changes
+
+== Undergraduate Thesis: Design of autonomous navigation mobile robot based on ROS
+Validated SLAM algorithms such as gmapping, hector-slam and cartographer in gazebo and Rviz simulation environments, and was familiar with the complete autonomous navigation simulation experiment process. 
+
+== Multi-robot localization method for time-varying pollution source in mechanical ventilation stable flow area
+- The national college students' science and technology innovation project:
+- The first study presented a particle swarm optimization (PSO) algorithm-based multi-robot olfaction method (UPSO) for locating time-varying contaminant sources in the indoor steady flow field with mechanical ventilation and verified the effectiveness of UPSO by experiment.
+- For locating time-varying indoor particle sources under different ventilation modes, this study presented the UWOA method that bases on Whale Optimization Algorithm. The two methods were validated and compared with the UPSO methods by experiments.
+- Published an article in the journal "Building Science" titled "Experimental Research on Using Multiple Robots to Locate Indoor Periodic Pollution Sources".
+
+
+[research.html Find out more].
+
+

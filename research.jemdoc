@@ -2,9 +2,26 @@
 # jemdoc: nofooter
 = Jiang Wenqing(姜文青) - Research
 
+== eFMT-SLAM
+Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency
+domain to extract the camera's motion transformation. And it is applied to consecutive images and the camera pose is
+then estimated via the chain rule of the transforms. This project mainly focuses on the SLAM algorithm that is extended by eFMT-based visual odometry(VO). It detects
+and closes loops in the path of the camera, and applies eFMT to two non-consecutive but overlapping frames to
+furtherly constraining the pose of the camera.
+
+
+== Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint
+Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.
+
+This project presents a novel solution that relies on the availability of an external motion capture system. Our core
+contribution consists of an extension to the hand-eye calibration problem which jointly solves multi-eye-to-base
+problems in closed form. We furthermore demonstrate its equivalence to the multi-eye-in-hand problem. The practical validity of our approach
+is supported by our experiments, indicating that the method is highly efficient and accurate, and outperforms existing
+closed-form alternatives.
+
 
 == Mapping robot
-This project aims to build a robot equipped with 16 industrial cameras, a lidar, and other sensors on the Husky platform. It will be used to collect real environment data sets.
+This project aims to build a robot. It should feature many more sensors (e.g. 11 cameras: additionally stereo back and monocular down, all at 60 frames per second; three event cameras; stereo infrared cameras; an omni-directional camera; 5 RGBD cameras; 4 high-resolution 3D LiDARs, as well as sonar & radar sensors). With this sensors, we can collect more accurate and perfect environment data.
 
 == Laser-omni-sinusoid
 After radar scans to obtain environmental information, the point cloud is projected onto a plane to form a picture. Use Fourier transform to analyze the transformation of pictures corresponding to consecutive frames, thereby inferring the camera's pose changes
@@ -14,11 +31,6 @@ Validated SLAM algorithms such as gmapping, hector-slam and cartographer in gaze
 
 == Multi-robot localization method for time-varying pollution source in mechanical ventilation stable flow area
 - The national college students' science and technology innovation project:
-- The first study presented a particle swarm optimization (PSO) algorithm-based multi-robot olfaction method (UPSO) for locating time-varying contaminant sources in the indoor steady flow field with mechanical ventilation and verified the effectiveness of UPSO by experiment.
-- For locating time-varying indoor particle sources under different ventilation modes, this study presented the UWOA method that bases on Whale Optimization Algorithm. The two methods were validated and compared with the UPSO methods by experiments.
-- Published an article in the journal "Building Science" titled "Experimental Research on Using Multiple Robots to Locate Indoor Periodic Pollution Sources".
-
-
-[research.html Find out more].
-
+- This project presented a particle swarm optimization (PSO) algorithm-based multi-robot olfaction method (UPSO) for locating time-varying contaminant sources in the indoor steady flow field with mechanical ventilation. For locating time-varying indoor particle sources under other ventilation modes, this study proposes the UWOA method based on Whale Optimization Algorithm. 
+- Published an article in the journal "Building Science" titled "Experimental Research on Using Multiple Robots to Locate Indoor Periodic Pollution Sources". 
 

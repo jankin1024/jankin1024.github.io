@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
-<title>Jiang Wenqing(姜文青) - Research</title>
+<title>Research</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -21,28 +21,44 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Jiang Wenqing(姜文青) - Research</h1>
+<h1>Research</h1>
 </div>
-<h2>eFMT-SLAM</h2>
-<p>Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency
-domain to extract the camera's motion transformation. And it is applied to consecutive images and the camera pose is
-then estimated via the chain rule of the transforms. This project mainly focuses on the SLAM algorithm that is extended by eFMT-based visual odometry(VO). It detects
-and closes loops in the path of the camera, and applies eFMT to two non-consecutive but overlapping frames to
-furtherly constraining the pose of the camera.</p>
-<h2>Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint</h2>
-<p>Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.</p>
+<h2>2022/06 - now, eFMT-SLAM</h2>
+<table class="imgtable"><tr><td>
+<img src="image/system_overview.png" alt="system_overview" width="935px" height="232px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency 
+domain to extract the camera's motion transformation. And it is applied to consecutive images and the camera pose is 
+then estimated via the chain rule of the transforms. This project mainly focuses on the SLAM algorithm that is extended 
+by eFMT-based visual odometry(VO). It detects and closes loops in the path of the camera, and applies eFMT to two 
+non-consecutive but overlapping frames to furtherly constraining the pose of the camera.</p>
+<h2>2022/06 - 2022/07, Multi-cameras and IMU synchronization</h2>
+<p>In order to verify a developing SLAM method, we need to collect datasets with ground truth. We install 5 monocular cameras, 1 IMU and 1 GNNS receiver on the top of a car. The frequency of image messages is 40 Hz and IMU messages&rsquo; frequency is 400 Hz. But the GPS frame's frequency is only 10 Hz. These sensors have a pin for registering. Considering the IMU frequency is so high and it can publish a sample signal with low frequency, a proper way is to let IMU be the time source and trigger cameras and GNNS receiver. 
+All sensors and launched with ros drivers and communicate with rostopic. Three computers connect all sensors and store the data by advertising topics.</p>
+<h2>2021/12 - 2022/04, Spotlights: Probing Shapes from Spherical Viewpoints</h2>
+<table class="imgtable"><tr><td>
+<img src="image/double_sphere.png" alt="double_sphere" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>We have realized a new representation method of 3D objects based on the double sphere sampling model, and given the mathematical derivation and experimental verification. Our method are verfied on KITTI360 dataset and have a good performence. <br />
+This work has been received by 2022 ACCV under the title of &ldquo;Spotlights: Probing Shapes from Spherical Viewpoints&rdquo;.</p>
+<h2>2021/06 - 2021/09, Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint</h2>
+<table class="imgtable"><tr><td>
+<img src="image/principle.gif" alt="principle" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.<br /></p>
+<table class="imgtable"><tr><td>
+<img src="image/multicamerassystem.gif" alt="multicamerassystem" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <p>This project presents a novel solution that relies on the availability of an external motion capture system. Our core
 contribution consists of an extension to the hand-eye calibration problem which jointly solves multi-eye-to-base
 problems in closed form. We furthermore demonstrate its equivalence to the multi-eye-in-hand problem. The practical validity of our approach
 is supported by our experiments, indicating that the method is highly efficient and accurate, and outperforms existing
 closed-form alternatives.</p>
-<h2>Mapping robot</h2>
-<p>This project aims to build a robot. It should feature many more sensors (e.g. 11 cameras: additionally stereo back and monocular down, all at 60 frames per second; three event cameras; stereo infrared cameras; an omni-directional camera; 5 RGBD cameras; 4 high-resolution 3D LiDARs, as well as sonar &amp; radar sensors). With this sensors, we can collect more accurate and perfect environment data.</p>
-<h2>Laser-omni-sinusoid</h2>
+<h2>2020/12, Laser-omni-sinusoid</h2>
 <p>After radar scans to obtain environmental information, the point cloud is projected onto a plane to form a picture. Use Fourier transform to analyze the transformation of pictures corresponding to consecutive frames, thereby inferring the camera's pose changes</p>
-<h2>Undergraduate Thesis: Design of autonomous navigation mobile robot based on ROS</h2>
+<h2>2020/06, Undergraduate Thesis: Design of autonomous navigation mobile robot based on ROS</h2>
 <p>Validated SLAM algorithms such as gmapping, hector-slam and cartographer in gazebo and Rviz simulation environments, and was familiar with the complete autonomous navigation simulation experiment process. </p>
-<h2>Multi-robot localization method for time-varying pollution source in mechanical ventilation stable flow area</h2>
+<h2>2018 - 2022/01, Multi-robot localization method for time-varying pollution source in mechanical ventilation stable flow area</h2>
 <ul>
 <li><p>The national college students&rsquo; science and technology innovation project:</p>
 </li>

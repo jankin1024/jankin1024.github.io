@@ -1,12 +1,13 @@
 # jemdoc: menu{MENU}{publications.html}
 # jemdoc: nofooter
-= Jiang Wenqing(姜文青) - Publications
+= Publications
 
 == Submited
 loading...
 
 == Accepted
-. Wang, Yifu, Wenqing Jiang, Kun Huang, Soren Schwertfeger, and Laurent Kneip. "Accurate calibration of surround view camera systems from a generalization of the hand eye constraint." arXiv preprint arXiv:2202.00886 (2022).
+. Wei, J., Liu, L., Cheng, R., Jiang, W.B., Xu, M., Jiang, X., Sun, T., Schwertfeger, S., & Kneip, L. (2022). Spotlights: Probing Shapes from Spherical Viewpoints. ArXiv, abs/2205.12564.
+. Yifu Wang*, Wenqing Jiang*, Kun Huang, Sören Schwertfeger, Laurent Kneip. "Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint", 2022 IEEE International conference on robotics and automation (ICRA).
 . Jiang, Mingrui, Yu Liao, Xun Guo, Hao Cai, Wenqing Jiang, Zhou Yang, Fei Li, and Fei Liu. "A comparative experimental study of two multi-robot olfaction methods: Towards locating time-varying indoor pollutant sources." Building and Environment 207 (2022): 108560.
 
 

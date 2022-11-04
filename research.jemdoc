@@ -3,6 +3,20 @@
 = Research
 
 == 2022\/06 - now, eFMT-SLAM
+The basic principle of FMT on image registeration.
+~~~
+{}{img_left}{image/efmt-slam/fusion.png}{fusion}{}{256}{}
+~~~
+
+This image contains five single images. The first two are input images im0, im1. The third one is rotated im0 and the fourth is registered im0.
+We can find that these two images are registed very well from the last image.
+
+~~~
+{}{img_left}{image/efmt-slam/fusion-spectrum.png}{fusion-spectrum}{}{256}{}
+~~~
+
+These two PSD implies the principle of FMT. Frequency images can be obtained by applying FFT on these input images; PSD can be obtained by further apply phase-related method on these frequency images. Peaks in PSD indicate the transformation of input images. More information on the proof of this theory can be found in [https://robotics.shanghaitech.edu.cn/node/303 papers].
+
 ~~~
 {}{img_left}{image/system_overview.png}{system_overview}{935}{232}{}
 ~~~

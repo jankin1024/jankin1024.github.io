@@ -33,11 +33,13 @@ We can find that these two images are registed very well from the last image.</p
 <table class="imgtable"><tr><td>
 <img src="image/efmt-slam/fusion-spectrum.png" alt="fusion-spectrum" height="256px" />&nbsp;</td>
 <td align="left"></td></tr></table>
-<p>These two PSD implies the principle of FMT. Frequency images can be obtained by applying FFT on these input images; PSD can be obtained by further apply phase-related method on these frequency images. Peaks in PSD indicate the transformation of input images. More information on the proof of this theory can be found in <a href="https://robotics.shanghaitech.edu.cn/node/303">papers</a>.</p>
+<p>With the increasing application of intelligent mobile robots, stable and efficient Visual Odometry (VO) algorithms are becoming more and more important. Extended Fourier-Mellin Transform (eFMT) is a Fourier-Mellin Transform (FMT)-based image registration method that can be applied to top-down cameras, such as on aerial and underwater vehicles. eFMT extends FMT to multi-depth scenes, thus extending to more application scenarios. On this basis, we developed an optimized eFMT algorithm o-eFMT. We design and implement a pose estimation algorithm from several aspects. This algorithm first uses the Fourier Mellin Transform to convert the image to the frequency domain for processing, then extracts the scaling, rotation and translation transformations between images in two steps, and finally expresses the rotation and translation transformations in multi-depth scenes in the form of energy vectors. Through pattern matching, the scale of continuous pose estimation is unified. Furthermore, combination of the estimated pose with back-end optimization is used to optimize the loop closure of three consecutive frames, which improves the accuracy of the pose estimation.</p>
+<p>The advantages of the algorithm in this thesis are: (1) use a new method to extract energy vectors, (2) improve the accuracy of pattern matching, (3) introduce a back-end optimization module, and thus reduce the error of camera pose estimation.</p>
 <table class="imgtable"><tr><td>
-<img src="image/system_overview.png" alt="system_overview" width="935px" height="232px" />&nbsp;</td>
+<img src="image/efmt-slam/o-eFMT-pipeline.png" alt="pipeline" width="1096px" />&nbsp;</td>
 <td align="left"></td></tr></table>
-<p>Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency 
+<p><br />
+Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency 
 domain to extract the camera's motion transformation. And it is applied to consecutive images and the camera pose is 
 then estimated via the chain rule of the transforms. This project mainly focuses on the SLAM algorithm that is extended 
 by eFMT-based visual odometry(VO). It detects and closes loops in the path of the camera, and applies eFMT to two 
@@ -47,17 +49,17 @@ non-consecutive but overlapping frames to furtherly constraining the pose of the
 All sensors and launched with ros drivers and communicate with rostopic. Three computers connect all sensors and store the data by advertising topics.</p>
 <h2>2021/12 - 2022/04, Spotlights: Probing Shapes from Spherical Viewpoints</h2>
 <table class="imgtable"><tr><td>
-<img src="image/double_sphere.png" alt="double_sphere" height="250px" />&nbsp;</td>
+<img src="image/spotlight/models.png" alt="models" height="250px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>We have realized a new representation method of 3D objects based on the double sphere sampling model, and given the mathematical derivation and experimental verification. Our method are verfied on KITTI360 dataset and have a good performence. <br />
 This work has been received by 2022 ACCV under the title of &ldquo;Spotlights: Probing Shapes from Spherical Viewpoints&rdquo;.</p>
 <h2>2021/06 - 2021/09, Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint</h2>
 <table class="imgtable"><tr><td>
-<img src="image/principle.gif" alt="principle" height="250px" />&nbsp;</td>
+<img src="image/calibration/car_principle.jpg" alt="car" height="250px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.<br /></p>
 <table class="imgtable"><tr><td>
-<img src="image/multicamerassystem.gif" alt="multicamerassystem" height="250px" />&nbsp;</td>
+<img src="image/calibration/multicamerassystem.gif" alt="multicamerassystem" height="250px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>This project presents a novel solution that relies on the availability of an external motion capture system. Our core
 contribution consists of an extension to the hand-eye calibration problem which jointly solves multi-eye-to-base

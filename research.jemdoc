@@ -15,11 +15,14 @@ We can find that these two images are registed very well from the last image.
 {}{img_left}{image/efmt-slam/fusion-spectrum.png}{fusion-spectrum}{}{256}{}
 ~~~
 
-These two PSD implies the principle of FMT. Frequency images can be obtained by applying FFT on these input images; PSD can be obtained by further apply phase-related method on these frequency images. Peaks in PSD indicate the transformation of input images. More information on the proof of this theory can be found in [https://robotics.shanghaitech.edu.cn/node/303 papers].
+With the increasing application of intelligent mobile robots, stable and efficient Visual Odometry (VO) algorithms are becoming more and more important. Extended Fourier-Mellin Transform (eFMT) is a Fourier-Mellin Transform (FMT)-based image registration method that can be applied to top-down cameras, such as on aerial and underwater vehicles. eFMT extends FMT to multi-depth scenes, thus extending to more application scenarios. On this basis, we developed an optimized eFMT algorithm o-eFMT. We design and implement a pose estimation algorithm from several aspects. This algorithm first uses the Fourier Mellin Transform to convert the image to the frequency domain for processing, then extracts the scaling, rotation and translation transformations between images in two steps, and finally expresses the rotation and translation transformations in multi-depth scenes in the form of energy vectors. Through pattern matching, the scale of continuous pose estimation is unified. Furthermore, combination of the estimated pose with back-end optimization is used to optimize the loop closure of three consecutive frames, which improves the accuracy of the pose estimation.
+
+The advantages of the algorithm in this thesis are: (1) use a new method to extract energy vectors, (2) improve the accuracy of pattern matching, (3) introduce a back-end optimization module, and thus reduce the error of camera pose estimation.
 
 ~~~
-{}{img_left}{image/system_overview.png}{system_overview}{935}{232}{}
+{}{img_left}{image/efmt-slam/o-eFMT-pipeline.png}{pipeline}{1096}{}{}
 ~~~
+
 \n
 Unlike the VO algorithm based on feature points, eFMT VO analyzes the representation of the image in the frequency 
 domain to extract the camera's motion transformation. And it is applied to consecutive images and the camera pose is 
@@ -34,7 +37,7 @@ All sensors and launched with ros drivers and communicate with rostopic. Three c
 
 == 2021\/12 - 2022\/04, Spotlights: Probing Shapes from Spherical Viewpoints
 ~~~
-{}{img_left}{image/double_sphere.png}{double_sphere}{}{250}{}
+{}{img_left}{image/spotlight/models.png}{models}{}{250}{}
 ~~~
 \n
 We have realized a new representation method of 3D objects based on the double sphere sampling model, and given the mathematical derivation and experimental verification. Our method are verfied on KITTI360 dataset and have a good performence. \n
@@ -44,12 +47,12 @@ This work has been received by 2022 ACCV under the title of "Spotlights: Probing
 
 == 2021\/06 - 2021\/09, Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint
 ~~~
-{}{img_left}{image/principle.gif}{principle}{}{250}{}
+{}{img_left}{image/calibration/car_principle.jpg}{car}{}{250}{}
 ~~~
 \n
 Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.\n
 ~~~
-{}{img_left}{image/multicamerassystem.gif}{multicamerassystem}{}{250}{}
+{}{img_left}{image/calibration/multicamerassystem.gif}{multicamerassystem}{}{250}{}
 ~~~
 \n
 This project presents a novel solution that relies on the availability of an external motion capture system. Our core

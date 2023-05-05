@@ -47,7 +47,7 @@ This work has been received by 2022 ACCV under the title of "Spotlights: Probing
 
 == 2021\/06 - 2021\/09, Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint
 ~~~
-{}{img_left}{image/calibration/car_principle.jpg}{car}{}{250}{}
+{}{img_left}{image/calibration/car_principle.png}{car}{}{250}{}
 ~~~
 \n
 Large system size or absence of overlap in neighbouring fields-of-view often complicate their calibration.\n
